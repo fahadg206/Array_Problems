@@ -3,7 +3,7 @@
 function removeDuplicates(arr) {
     let yourArray = [];
 
-    for(i=0; i <arr.length; i++) {
+    for(let i=0; i <arr.length; i++) {
         if(yourArray.indexOf(arr[i]) === -1) {
             yourArray.push(arr[i])
         }
@@ -20,3 +20,5 @@ console.log(removeDuplicates([1,5,5,6,6,9,11,12]))
 // it has been identified again because the indexOf method only returns the FIRST index of a given element. So if it already returned it, then it would not count therefor
 // the dupilcate element is "not found". I then pushed the elements that dont have duplicates into the empty array "yourArray", and made sure for the function to return yourArray.
 // I then console logged the function "removeDuplicates" and passed an array with duplicates and found that my code passed. 
+
+//per your feedback: I declared a variable for "i"
